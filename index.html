@@ -320,6 +320,96 @@
             </div>
         </section>
 
+         <!-- Health Calculator Section -->
+        <section id="health-calculator" class="py-24 bg-white">
+            <div class="container mx-auto px-6 md:px-10">
+                <div class="max-w-4xl mx-auto card p-10 animate-on-scroll">
+                    <div class="text-center mb-10">
+                        <h2 class="font-serif text-3xl md:text-4xl font-bold text-[#1F4D3A] mb-4">Mushroom Health Calculator</h2>
+                        <p class="opacity-70">Discover how mushrooms can help you reach your personal health goals.</p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-bold mb-3">What is your weight goal?</label>
+                                <div class="grid grid-cols-1 gap-2">
+                                    <label class="flex items-center gap-3 p-3 bg-[#F5E6D3]/30 rounded-xl cursor-pointer border border-transparent hover:border-fresh transition-all">
+                                        <input type="radio" name="weight-goal" value="lose" class="accent-fresh" checked>
+                                        <span class="text-sm">Lose weight</span>
+                                    </label>
+                                    <label class="flex items-center gap-3 p-3 bg-[#F5E6D3]/30 rounded-xl cursor-pointer border border-transparent hover:border-fresh transition-all">
+                                        <input type="radio" name="weight-goal" value="maintain" class="accent-fresh">
+                                        <span class="text-sm">Maintain weight</span>
+                                    </label>
+                                    <label class="flex items-center gap-3 p-3 bg-[#F5E6D3]/30 rounded-xl cursor-pointer border border-transparent hover:border-fresh transition-all">
+                                        <input type="radio" name="weight-goal" value="gain" class="accent-fresh">
+                                        <span class="text-sm">Gain healthy weight</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-bold mb-3">Health Focus & Metrics</label>
+                                <div class="grid grid-cols-2 gap-4 mb-4">
+                                    <div class="relative">
+                                        <label class="block text-[10px] uppercase opacity-50 mb-1">Weight (kg)</label>
+                                        <input type="number" id="user-weight" value="70" class="w-full bg-[#F5E6D3]/30 p-4 rounded-xl text-sm border-0 focus:ring-2 focus:ring-fresh">
+                                    </div>
+                                    <div class="relative">
+                                        <label class="block text-[10px] uppercase opacity-50 mb-1">Activity Level</label>
+                                        <select id="user-activity" class="w-full bg-[#F5E6D3]/30 p-4 rounded-xl text-sm border-0 focus:ring-2 focus:ring-fresh appearance-none">
+                                            <option value="sedentary">Sedentary</option>
+                                            <option value="moderate">Moderate</option>
+                                            <option value="active">Active</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="relative">
+                                    <label class="block text-[10px] uppercase opacity-50 mb-1">Primary Health Goal</label>
+                                    <select id="health-focus" class="w-full bg-[#F5E6D3]/30 p-4 rounded-xl text-sm border-0 focus:ring-2 focus:ring-fresh appearance-none">
+                                        <option value="weightLoss">Weight Loss</option>
+                                        <option value="heartHealth">Heart Health</option>
+                                        <option value="diabetes">Diabetes Management</option>
+                                    </select>
+                                    <div class="absolute right-4 bottom-4 pointer-events-none opacity-50">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="calculator-results" class="bg-[#1F4D3A] text-white p-8 rounded-3xl flex flex-col justify-center animate-on-scroll">
+                            <div class="space-y-6">
+                                <div class="flex items-center justify-between mb-2">
+                                    <p class="text-[10px] uppercase tracking-widest font-bold text-fresh">Calculated Health Plan</p>
+                                    <div id="compatibility-badge" class="bg-fresh/20 text-fresh border border-fresh/30 px-3 py-1 rounded-full text-[10px] font-bold">
+                                        95% Match
+                                    </div>
+                                </div>
+                                <div>
+                                    <ul id="help-list" class="space-y-3 text-sm opacity-90">
+                                        <!-- Dynamic JS content -->
+                                    </ul>
+                                </div>
+                                <div class="pt-6 border-t border-fresh/20 grid grid-cols-2 gap-4">
+                                    <div>
+                                        <p class="text-[9px] uppercase tracking-widest font-bold text-fresh mb-1">Recommended Serving</p>
+                                        <p id="portion-text" class="text-xl font-serif font-bold">150g / day</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-[9px] uppercase tracking-widest font-bold text-fresh mb-1">Weekly Frequency</p>
+                                        <p id="intake-text" class="text-xl font-serif font-bold">4 times</p>
+                                    </div>
+                                </div>
+                                <a id="health-cta" href="https://wa.me/233543497182?text=Hello%2C%20I%20want%20to%20order%20mushrooms%20for%20my%20health%20goals." target="_blank" class="btn-whatsapp w-full py-4 text-sm mt-4">Order My Custom Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <!-- Videos Section -->
         <section class="py-24">
             <div class="container mx-auto px-6">
@@ -360,6 +450,53 @@
                 </div>
             </div>
         </section>
+
+         <!-- Smart Delivery Map Section -->
+        <section id="delivery" class="py-24 bg-white/50">
+            <div class="container mx-auto px-6 md:px-10">
+                <div class="text-center mb-16 animate-on-scroll">
+                    <h2 class="font-serif text-4xl font-bold text-[#1F4D3A] mb-4">Smart Delivery Coverage</h2>
+                    <p class="opacity-70 font-medium">Fast delivery within Tema and surrounding areas.</p>
+                </div>
+                
+                <div class="grid lg:grid-cols-[1fr_350px] gap-10 max-w-6xl mx-auto">
+                    <div class="card overflow-hidden h-[450px] relative animate-on-scroll">
+                        <!-- Stylized Map Placeholder -->
+                        <iframe 
+                            class="w-full h-full grayscale opacity-80 contrast-125"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15881.082987114757!2d0.009!3d5.67!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1020786cf8814529%3A0xc3f5ce8c08ec690b!2sTema%2C%20Ghana!5e0!3m2!1sen!2suk!4v1713880000000!5m2!1sen!2suk" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full border border-forest/10 text-[10px] font-bold uppercase tracking-wider">
+                           👉 Fast delivery within these areas
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4 animate-on-scroll delay-100">
+                        <h4 class="text-sm font-bold opacity-50 uppercase tracking-widest mb-6">Service Locations</h4>
+                        <div class="grid grid-cols-1 gap-2">
+                            <div class="p-3 bg-white rounded-xl border border-forest/5 flex items-center justify-between group hover:border-fresh transition-all cursor-default">
+                                <span class="text-sm font-semibold">New Sebrepor</span>
+                                <span class="text-[10px] font-bold text-fresh opacity-0 group-hover:opacity-100 transition-opacity">Delivery Available</span>
+                            </div>
+                            <div class="p-3 bg-white rounded-xl border border-forest/5 flex items-center justify-between group hover:border-fresh transition-all cursor-default text-sm font-semibold">Community 25</div>
+                            <div class="p-3 bg-white rounded-xl border border-forest/5 flex items-center justify-between group hover:border-fresh transition-all cursor-default text-sm font-semibold">Number 1</div>
+                            <div class="p-3 bg-white rounded-xl border border-forest/5 flex items-center justify-between group hover:border-fresh transition-all cursor-default text-sm font-semibold">Mataheko</div>
+                            <div class="p-3 bg-white rounded-xl border border-forest/5 flex items-center justify-between group hover:border-fresh transition-all cursor-default text-sm font-semibold">Afienya</div>
+                            <div class="p-3 bg-white rounded-xl border border-forest/5 flex items-center justify-between group hover:border-fresh transition-all cursor-default text-sm font-semibold">Gbetsile</div>
+                            <div class="p-3 bg-white rounded-xl border border-forest/5 flex items-center justify-between group hover:border-fresh transition-all cursor-default text-sm font-semibold">Afariwaa</div>
+                            <div class="p-3 bg-white rounded-xl border border-forest/5 flex items-center justify-between group hover:border-fresh transition-all cursor-default text-sm font-semibold">Bethlehem</div>
+                            <div class="p-3 bg-white rounded-xl border border-forest/5 flex items-center justify-between group hover:border-fresh transition-all cursor-default text-sm font-semibold">Saki</div>
+                            <div class="p-3 bg-white rounded-xl border border-forest/5 flex items-center justify-between group hover:border-fresh transition-all cursor-default text-sm font-semibold">Bediako</div>
+                        </div>
+                        <a href="https://wa.me/233543497182?text=Hello%2C%20I%20want%20to%20check%20delivery%20availability%20for%20my%20area" class="btn-whatsapp w-full py-4 text-xs mt-6">Check Availability & Order</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!-- Testimonials -->
         <section class="py-24">
@@ -507,8 +644,87 @@
         <svg class="w-[30px] h-[30px]" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </a>
 
-    <script>
+ <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Health Calculator Logic
+        const healthFocusSelect = document.getElementById('health-focus');
+        const userWeightInput = document.getElementById('user-weight');
+        const userActivitySelect = document.getElementById('user-activity');
+        const helpList = document.getElementById('help-list');
+        const intakeText = document.getElementById('intake-text');
+        const portionText = document.getElementById('portion-text');
+        const compatibilityBadge = document.getElementById('compatibility-badge');
+        const healthCta = document.getElementById('health-cta');
+
+        const healthData = {
+            weightLoss: [
+                'Low cal replacement for heavy meals',
+                'High water & fiber content for satiety',
+                'Boosts metabolism with B-vitamins'
+            ],
+            heartHealth: [
+                'Potassium balance reduces sodium impact',
+                'Ergothioneine protects blood vessels',
+                'Beta-glucans lower "bad" LDL cholesterol'
+            ],
+            diabetes: [
+                'Low Glycemic index prevents insulin spikes',
+                'High selenium protects against stress',
+                'Protein helps stabilize blood sugar'
+            ]
+        };
+
+        function updateCalculator() {
+            const focus = healthFocusSelect.value;
+            const weight = parseFloat(userWeightInput.value) || 70;
+            const activity = userActivitySelect.value;
+            const goalBtn = document.querySelector('input[name="weight-goal"]:checked');
+            const goal = goalBtn ? goalBtn.value : 'maintain';
+
+            // --- COMPUTATION ALGORITHM ---
+            
+            // 1. Calculate Recommended Portion (Grams per meal)
+            let basePortion = 150;
+            if (goal === 'gain') basePortion = 250;
+            if (goal === 'lose') basePortion = 120;
+            
+            // Adjust based on weight
+            const portionResult = Math.round(basePortion + (Math.max(0, weight - 60) * 1.5));
+
+            // 2. Calculate Weekly Frequency
+            let baseFrequency = 3;
+            if (activity === 'moderate') baseFrequency = 4;
+            if (activity === 'active') baseFrequency = 5;
+            if (focus === 'heartHealth') baseFrequency += 1;
+            const frequencyResult = Math.min(7, baseFrequency);
+
+            // 3. Calculate Compatibility Score
+            let matchScore = 92;
+            if (focus === 'weightLoss' && goal === 'lose') matchScore = 99;
+            if (focus === 'diabetes' && goal === 'lose') matchScore = 97;
+            if (focus === 'heartHealth' && activity === 'active') matchScore = 98;
+            
+            // --- UPDATE UI ---
+            helpList.innerHTML = healthData[focus].map(item => `<li>• ${item}</li>`).join('');
+            portionText.textContent = `${portionResult}g / day`;
+            intakeText.textContent = `${frequencyResult} times / wk`;
+            compatibilityBadge.textContent = `${matchScore}% Match`;
+            
+            // Update CTA for WhatsApp
+            const message = `Hello Elizabeth, I used your Health Calculator. My Weight: ${weight}kg, Goal: ${goal}, Focus: ${focus}. Calculated Plan: ${portionResult}g portions, ${frequencyResult} times/week. I'd like to order!`;
+            healthCta.href = `https://wa.me/233543497182?text=${encodeURIComponent(message)}`;
+        }
+
+        healthFocusSelect.addEventListener('change', updateCalculator);
+        userWeightInput.addEventListener('input', updateCalculator);
+        userActivitySelect.addEventListener('change', updateCalculator);
+        document.querySelectorAll('input[name="weight-goal"]').forEach(radio => {
+            radio.addEventListener('change', updateCalculator);
+        });
+
+        // Initialize calculator
+        updateCalculator();
 
         // Animation on scroll
         const observerOptions = {
@@ -527,6 +743,7 @@
             observer.observe(el);
         });
     </script>
+
 </body>
 </html>
 
